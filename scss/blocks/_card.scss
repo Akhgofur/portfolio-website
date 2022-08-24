@@ -5,6 +5,14 @@
     background-color: #fff;
     box-shadow: 0px 0px 17px 2px rgb(23 23 23 / 18%);
     border-radius: 5px;
+    &:hover {
+        .card__img {
+            transform: scale(1.2);
+        }
+    }
+}
+.card__wrapper {
+    overflow: hidden;
 }
 .card__img {
     display: block;
@@ -12,6 +20,7 @@
     max-height: 223px;
     object-fit: cover;
     border-radius: 2px;
+    transition: all 0.5s;
 }
 .card__link-wrapper {
     display: flex;
