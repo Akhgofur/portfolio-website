@@ -13,14 +13,17 @@
 }
 .card__wrapper {
     overflow: hidden;
-}
-.card__img {
-    display: block;
     max-width: 200px;
     max-height: 223px;
     object-fit: cover;
+}
+.card__img {
+    display: block;
+    object-fit: cover;
     border-radius: 2px;
     transition: all 0.5s;
+    height: 100%;
+    width: 100%;
 }
 .card__link-wrapper {
     display: flex;
@@ -36,6 +39,9 @@
     background-color: #00AD9F;
     border-radius: 5px;
     color: #fff;
+    &:hover {
+        opacity: 0.5;
+    }
 }
 .card__github-link {
     display: block;
@@ -45,4 +51,7 @@
     background-color: #161b22;
     border-radius: 5px;
     color: #fff;
+    &:hover {
+        opacity: 0.5;
+    }
 }

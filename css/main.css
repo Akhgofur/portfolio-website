@@ -398,16 +398,20 @@ img {
 
 .card__wrapper {
   overflow: hidden;
-}
-
-.card__img {
-  display: block;
   max-width: 200px;
   max-height: 223px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card__img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 2px;
   transition: all 0.5s;
+  height: 100%;
+  width: 100%;
 }
 
 .card__link-wrapper {
@@ -426,6 +430,9 @@ img {
   border-radius: 5px;
   color: #fff;
 }
+.card__link:hover {
+  opacity: 0.5;
+}
 
 .card__github-link {
   display: block;
@@ -435,4 +442,7 @@ img {
   background-color: #161b22;
   border-radius: 5px;
   color: #fff;
+}
+.card__github-link:hover {
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
